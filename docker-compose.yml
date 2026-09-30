@@ -1,0 +1,18 @@
+services:
+  mysql:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: phishkg
+      MYSQL_DATABASE: phishkg
+      MYSQL_USER: phishkg
+      MYSQL_PASSWORD: phishkg
+    ports:
+      - "3306:3306"
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+  neo4j:
+    image: neo4j:5
+    environment:
+      NEO4J_AUTH: neo4j/phishkg123
+    ports:
+      - "7474:7474"
+      - "7687:7687"

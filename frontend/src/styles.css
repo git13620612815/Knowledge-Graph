@@ -1,0 +1,74 @@
+:root {
+  color: #1c2430;
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #eef2f6;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: #1f6feb; text-decoration: none; }
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  background: #102033;
+}
+.auth-intro {
+  color: #e8eef6;
+  padding: 72px 64px;
+}
+.auth-intro h1 { font-size: 36px; margin: 12px 0; font-weight: 650; }
+.auth-intro p { max-width: 520px; line-height: 1.7; color: #c5d2e2; }
+.auth-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f8fb;
+}
+.auth-card .panel {
+  width: 420px;
+  background: white;
+  border-radius: 12px;
+  padding: 28px 28px 20px;
+  box-shadow: 0 10px 30px rgba(16, 32, 51, 0.08);
+}
+.shell { min-height: 100vh; }
+.aside {
+  background: #142033;
+  color: white;
+}
+.brand {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+.aside .el-menu { border-right: none; }
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #e6ebf2;
+}
+.page { padding: 18px; }
+.card-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 12px; }
+.metric {
+  background: white;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.metric span { color: #66758a; font-size: 13px; }
+.metric strong { display: block; margin-top: 6px; font-size: 26px; }
+.chart-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 12px; }
+.chart-box { height: 320px; background: white; border-radius: 10px; padding: 8px; }
+.toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.g6-box { height: 640px; background: #fbfcfe; border: 1px solid #e6ebf2; border-radius: 10px; }
+.legend { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; font-size: 12px; color: #526175; }
+.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 4px; }
+@media (max-width: 960px) {
+  .auth-page { grid-template-columns: 1fr; }
+  .auth-intro { display: none; }
+  .card-grid, .chart-grid { grid-template-columns: 1fr; }
+}

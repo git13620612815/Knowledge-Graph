@@ -1,0 +1,13 @@
+subject,from_addr,body,expect
+Microsoft 365 订阅即将停用,noreply@micr0soft.com,您的邮箱将于今日停用。请立即打开 http://micr0soft.com/account/billing 更新付款方式并确认管理员密码。,phish
+工资补贴待确认,billing@paypa1.com,补贴已到账但身份未核验。请打开 http://paypa1.com/payroll/confirm 核对收款账户，12 小时内未处理将退回。,phish
+包裹关税未支付,notice@ship-alert.test,包裹因关税未付被暂扣。请在 http://203.0.113.10/login 确认支付卡，否则今日无法放行。,phish
+支付宝安全中心验证,service@a1ipay.com,账户存在异常交易。请登录 http://a1ipay.com/security/verify 重新认证，逾期将限制提现。,phish
+Unusual sign-in on your mailbox,alert@paypa1.com,We locked the mailbox after a foreign sign-in. Verify now at http://paypa1.com/login?id=99 or the account stays suspended.,phish
+发票校验失败，请重新认证,invoice@micr0soft.com,企业发票校验失败。请打开 http://micr0soft.com/invoice/retry 重新提交认证资料。,phish
+周四前补全接口文档,member0@company.com,请把导出接口补进仓库，说明请求字段和错误码。参考 https://company.com/wiki/api 。周四评审时直接过。,ham
+本周代码评审改期,member1@company.com,代码评审改到周五上午，关注空状态和单元测试。纪要在 https://github.com/phishkg/docs/sprint 。,ham
+实验室服务器维护通知,ops@company.com,训练机器今晚 23 点重启，请把长任务改到明天早上。维护说明见 https://company.com/wiki/lab 。,ham
+Sprint planning reminder,pm@company.com,Monday planning stays at 10:00. Please estimate the export task using https://github.com/phishkg/docs/plan .,ham
+会议纪要已更新,member2@company.com,纪要已放到 https://company.com/wiki/notes ，结论是先完成数据清洗，不需要额外审批。,ham
+需求问题清单,member0@company.com,明天下午同步进度。请提前阅读 https://github.com/phishkg/docs/questions 并准备问题，会议室在三楼。,ham
